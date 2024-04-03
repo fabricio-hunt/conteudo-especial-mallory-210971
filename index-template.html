@@ -58,6 +58,8 @@
         grid-row: 1; 
         display: flex;
         align-items: center;
+        text-align: justify;
+        line-height: 30px;
   }
 
     .image {
@@ -75,13 +77,6 @@
       opacity: 0.7;
     }
 
-    .main-container .bk-video{
-      max-width: 100%;
-      height: auto;
-      margin: 0 auto;
-    }
-
-    
     .main-container .bk-video video{
       max-width: 100%;
       height: auto;
@@ -110,11 +105,25 @@
       opacity: 0.7;
     }
 
-    @media only screen and (max-width: 375px) {
-    .main-container .grid-container{
+
+    .main-container hr{
+      width: 100%;
+      height: 3px;
+    }
+
+    @media only screen and (max-width: 414px) {
+    .main-container  .grid-container{
       display: flex;
-      flex-direction:  column-reverse;
-      font-size: 18px;
+      flex-direction: column-reverse;
+    }
+
+    .card{
+      flex-direction: column;
+    }
+
+    .card img{
+      max-width: 80%;
+      height: auto;
     }
 }
 
@@ -131,8 +140,13 @@
 
     <div class="grid-container">
     <div class="grid-item text">
-        <p>O Ventilador de Mesa Egeo, modelo 2 em 1 – mesa e parede, que oferece modernidade, praticidade, design e com potência de 140W, grade em sistema especial TS e inovadora hélice de 15 pás, possui eficiência energética nas 3 velocidades gerando maior economia. </p>
+        <p>O Grill Mallory Asteria Compact 900W 127V Preto E Inox é uma opção versátil e prática para quem deseja preparar sanduíches e grelhados em casa. <br>
+          Potência: Com potência de 900W, ele é capaz de preparar alimentos rapidamente e com eficiência.  <br>
+        </p>
     </div>
+
+  <hr>
+
     <div class="grid-item image">
         <img src="/Image/GRILL-ASTERIA-COMPACT-2020 (1).png" alt="Descrição da Imagem">
     </div>
