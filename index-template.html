@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- 210971 produto-->
+<style>  
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-container{
+        max-width: 80%;
+        margin: 0 auto;
+        padding:0; 
+        display: flex;
+        flex-direction: column;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        line-height: 25px;
+        font-size: 20px;
+        background: rgb(253, 253, 253);
+        background: linear-gradient(0deg, rgb(253, 253, 253) 0%, rgba(255,255,255,1) 50%);
+     }
+
+    .page-header {
+        display: inline-block;
+        margin: 0 auto;
+        width: 250px;
+        height: auto;
+    }
+
+    .page-header img {
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 10px; 
+    }
+
+    .grid-item {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .text {
+        grid-column: 1 / span 1; 
+        grid-row: 1; 
+        display: flex;
+        align-items: center;
+  }
+
+    .image {
+        grid-column: 2 / span 1; 
+        grid-row: 1; 
+  }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .image img:hover{
+      opacity: 0.7;
+    }
+
+    .main-container .bk-video{
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    
+    .main-container .bk-video video{
+      max-width: 100%;
+      height: auto;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+
+    .card img{
+      max-width: 50%;
+      height: auto;
+      justify-content: center;
+      align-items: baseline;
+      display: flex;
+      margin: 0 auto;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .card img:hover {
+      opacity: 0.7;
+    }
+
+    @media only screen and (max-width: 375px) {
+    .main-container .grid-container{
+      display: flex;
+      flex-direction:  column-reverse;
+      font-size: 18px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="main-container"> 
+
+    <header class="page-header"> 
+        <img src="/image/logo-m.png" alt="logo mallory">
+    </header>
+
+    <div class="grid-container">
+    <div class="grid-item text">
+        <p>O Ventilador de Mesa Egeo, modelo 2 em 1 – mesa e parede, que oferece modernidade, praticidade, design e com potência de 140W, grade em sistema especial TS e inovadora hélice de 15 pás, possui eficiência energética nas 3 velocidades gerando maior economia. </p>
+    </div>
+    <div class="grid-item image">
+        <img src="/Image/GRILL-ASTERIA-COMPACT-2020 (1).png" alt="Descrição da Imagem">
+    </div>
+    </div> 
+
+    <div class="card">
+        <figure> <img src="/Image/GRILL-ASTERIA-COMPACT-2020 (2).png" alt=""></figure>
+        <figure> <img src="/Image/GRILL-ASTERIA-COMPACT-2020 (3).png" alt=""></figure>
+        <figure> <img src="/Image/GRILL-ASTERIA-COMPACT-2020 (4).png" alt=""></figure>
+    </div>
+<!--
+  <section class="bk-video">
+      <video autoplay muted loop>
+        <source src="" type="video/mp4">
+  </video> -->
+</div> 
+
+
+</body>
+</html>
